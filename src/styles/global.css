@@ -233,6 +233,7 @@ form {
   }
 
 
+  list-style-type: none;
   padding: 20px;
   background-color: #004643;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
