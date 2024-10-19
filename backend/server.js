@@ -1,10 +1,10 @@
-// src/backend/server.js
-
-const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const Feedback = require('./models/feedback');
-const generateInsights = require('./models/insights');
+import express from 'express';
+import mongoose from 'mongoose';
+import bodyParser from 'body-parser';
+import Feedback from './models/feedback.js';
+import generateInsights from './models/insights.js';
+import axios from 'axios';
+import { Router } from 'express';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
