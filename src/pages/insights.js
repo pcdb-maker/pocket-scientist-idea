@@ -254,6 +254,11 @@ const Insights = () => {
         </label>
         <label>
           Role:
+          <select name="role" onChange={handleFilterChange} value={filters.role}>
+            <option value="">All</option>
+            <option value="Manager">Manager</option>
+            <option value="Executive">Executive</option>
+            <option value="Analyst">Analyst</option>
           </select>
         </label>
         <label>
