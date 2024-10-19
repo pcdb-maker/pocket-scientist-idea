@@ -86,48 +86,54 @@ section {
   
   /* Profile Grid */
 .profile-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Space between the profile cards */
-    padding: 20px;
-  }
-  
-  /* Profile Cards */
-  .profile-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    text-align: center;
-  }
-  
-  .profile-card h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .profile-card p {
-    font-size: 1.1rem;
-    color: #666;
-  }
-  
-  .profile-card strong {
-    color: #333;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
 
-  .positive {
-    color: green;
-  }
-  
-  .negative {
-    color: red;
-  }
-  
-  .neutral {
-    color: gray;
-  }
-  
+/* Profile Cards */
+.profile-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.profile-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card h2 {
+  font-size: 1.8rem;
+  color: #004643;
+  margin-bottom: 15px;
+}
+
+.profile-card p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.profile-card strong {
+  color: #333;
+}
+
+.positive {
+  color: #4CAF50;
+}
+
+.negative {
+  color: #F44336;
+}
+
+.neutral {
+  color: #9E9E9E;
+}
+
 /* General form styling */
 form {
   display: flex;
