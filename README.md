@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+##Pocket Scientist
 
-## Getting Started
+Pocket Scientist is an AI-powered insights platform designed for performance management. This project leverages AI to generate actionable insights, streamline feedback, and support employee development using technologies like React, Next.js, Express, and MongoDB.
 
-First, run the development server:
+Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Introduction
 
-Open [http://localhost:3000](3000) with your browser to see the result.
+Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Running the Project
 
-## Learn More
+API Endpoints
 
-To learn more about Next.js, take a look at the following resources:
+Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contributing
 
-## Deploy on Vercel
+License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Introduction
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Pocket Scientist provides a data-driven solution for managing employee performance and growth, incorporating AI-assisted features such as a Writing Assistant and dynamic insights. The platform offers easy-to-understand analytics to enhance team engagement and facilitate constructive feedback.
+
+##Features
+
+Employee Profiles: View and manage detailed profiles of employees with performance metrics.
+
+AI Insights Generation: Generate actionable insights from employee feedback.
+
+Writing Assistant: Get AI-assisted feedback suggestions to improve communication.
+
+Dynamic Engagement Trends: Visualize employee engagement trends over time.
+
+User-Friendly Dashboard: Navigate easily between insights, feedback, and employee profiles.
+
+##Installation
+
+To get started with Pocket Scientist, follow these steps:
+
+Clone the repository:
+
+Install dependencies:
+
+Set up environment variables:
+Create a .env file in the root directory and add the necessary environment variables (refer to the Environment Variables section).
+
+Connect to MongoDB:
+Make sure MongoDB is running locally or provide a MongoDB connection string for a cloud instance in your .env file.
+
+Running the Project
+
+Development Mode
+
+To start the development server:
+
+The application will be available at http://localhost:3000.
+
+Production Mode
+
+Build the application for production:
+
+Start the production server:
+
+The production server will run at http://localhost:3000.
+
+API Endpoints
+
+/api/insights
+
+GET: Retrieve insights generated from employee feedback.
+
+/api/feedback
+
+POST: Submit feedback for a specific employee.
+
+/api/write-assistant
+
+POST: Get AI-assisted feedback using a prompt.
+
+Tech Stack
+
+Frontend: React, Next.js
+
+Backend: Express.js, Node.js
+
+Database: MongoDB
+
+AI Integration: OpenAI API
+
+Styling: CSS with modern animations, parallax effects
+
+Environment Variables
+
+Create a .env file in the root directory with the following variables:
+
+Contributing
+
+Contributions are welcome! To contribute:
+
+Fork the repository.
+
+Create a new branch (git checkout -b feature-branch).
+
+Commit your changes (git commit -m 'Add new feature').
+
+Push to the branch (git push origin feature-branch).
+
+Open a pull request.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
