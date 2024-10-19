@@ -241,6 +241,11 @@ const Insights = () => {
         <button onClick={() => setSelectedTab('reminders')}>Reminders</button>
         <button onClick={() => setSelectedTab('actionables')}>Actionable Insights</button>
         <button onClick={() => setSelectedTab('trends')}>Engagement Trends</button>
+        <button onClick={() => { setSelectedTab('summary'); setSelectedIssue(null); setAppliedFilters(null); }}>Summary</button>
+        <button onClick={() => { setSelectedTab('focusAreas'); setSelectedIssue(null); setAppliedFilters(null); }}>Focus Areas</button>
+        <button onClick={() => { setSelectedTab('reminders'); setSelectedIssue(null); setAppliedFilters(null); }}>Reminders</button>
+        <button onClick={() => { setSelectedTab('actionables'); setSelectedIssue(null); setAppliedFilters(null); }}>Actionable Insights</button>
+        <button onClick={() => { setSelectedTab('trends'); setSelectedIssue(null); setAppliedFilters(null); }}>Engagement Trends</button>
       </div>
       <div className="filter-buttons">
         <button onClick={() => handleFilterChange('department', 'Engineering')}>Filter by Engineering Department</button>
