@@ -247,6 +247,7 @@ const Insights = () => {
         <button onClick={() => handleFilterChange('role', 'Manager')}>Filter by Role: Manager</button>
         <button onClick={() => handleFilterChange('engagementLevel', 'High')}>Filter by High Engagement Level</button>
         <button onClick={() => handleFilterChange('engagementLevel', 'Low')}>Filter by Low Engagement Level</button>
+        <label>
           Department:
           <select name="department" onChange={handleFilterChange} value={filters.department}>
             <option value="">All</option>
