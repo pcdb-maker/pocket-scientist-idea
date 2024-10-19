@@ -108,6 +108,7 @@ const Insights = () => {
           return (
             <div className="development-issues">
               <h2>Development Issues (Below 3):</h2>
+    }
 
     switch (selectedTab) {
       case 'focusAreas':
