@@ -247,6 +247,7 @@ const Insights = () => {
         <button onClick={() => handleFilterChange('role', 'Manager')}>Filter by Role: Manager</button>
         <button onClick={() => handleFilterChange('engagementLevel', 'High')}>Filter by High Engagement Level</button>
         <button onClick={() => handleFilterChange('engagementLevel', 'Low')}>Filter by Low Engagement Level</button>
+            <option value="">All</option>
             <option value="Sales">Sales</option>
             <option value="HR">HR</option>
           </select>
