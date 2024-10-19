@@ -236,21 +236,12 @@ const Insights = () => {
     <Layout>
       <h1>AI-Powered Insights</h1>
       <div className="tabs">
-        <button onClick={() => setSelectedTab('summary')}>Summary</button>
-        <button onClick={() => setSelectedTab('focusAreas')}>Focus Areas</button>
-        <button onClick={() => setSelectedTab('reminders')}>Reminders</button>
-        <button onClick={() => setSelectedTab('actionables')}>Actionable Insights</button>
-        <button onClick={() => setSelectedTab('trends')}>Engagement Trends</button>
         <button onClick={() => { setSelectedTab('summary'); setSelectedIssue(null); setAppliedFilters(null); }}>Summary</button>
         <button onClick={() => { setSelectedTab('focusAreas'); setSelectedIssue(null); setAppliedFilters(null); }}>Focus Areas</button>
         <button onClick={() => { setSelectedTab('reminders'); setSelectedIssue(null); setAppliedFilters(null); }}>Reminders</button>
         <button onClick={() => { setSelectedTab('actionables'); setSelectedIssue(null); setAppliedFilters(null); }}>Actionable Insights</button>
         <button onClick={() => { setSelectedTab('trends'); setSelectedIssue(null); setAppliedFilters(null); }}>Engagement Trends</button>
       </div>
-      <div className="filter-buttons">
-        <button onClick={() => handleFilterChange('department', 'Engineering')}>Filter by Engineering Department</button>
-        <button onClick={() => handleFilterChange('role', 'Manager')}>Filter by Role: Manager</button>
-        <button onClick={() => handleFilterChange('engagementLevel', 'High')}>Filter by High Engagement Level</button>
         <button onClick={() => handleFilterChange('engagementLevel', 'Low')}>Filter by Low Engagement Level</button>
         <label>
           Department:
