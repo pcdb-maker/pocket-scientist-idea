@@ -231,6 +231,7 @@ form {
     color: #4CAF50;
   }
   }
+}
 
 ul li:hover {
   transform: translateY(-5px);
