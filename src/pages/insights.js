@@ -88,6 +88,25 @@ const Insights = () => {
                   .map((profile, index) => (
                     <li key={index}>{profile.name}: Engagement Score - {profile.surveyResponses.engagement}</li>
                   ))}
+              </ul>
+            </div>
+          );
+        case 'leadership':
+          return (
+            <div className="leadership-issues">
+              <h2>Leadership Issues (Below 3):</h2>
+              <ul>
+                {filteredProfiles
+                  .filter(profile => profile.surveyResponses.leadership < 3)
+                  .map((profile, index) => (
+                    <li key={index}>{profile.name}: Leadership Score - {profile.surveyResponses.leadership}</li>
+                  ))}
+              </ul>
+            </div>
+          );
+        case 'development':
+          return (
+            <div className="development-issues">
     switch (selectedTab) {
       case 'focusAreas':
         return (
