@@ -39,6 +39,21 @@ app.post('/api/feedback', async (req, res) => {
   }
 });
 
+// AI Writing Assistant Route
+const router = Router();
+router.post('/api/write-assistant', async (req, res) => {
+  const { prompt } = req.body;
+
+  try {
+    const response = await axios.post('https://api.openai.com/v1/completions', {
+      prompt,
+      max_tokens: 150,
+      temperature: 0.7,
+    }, {
+      headers: {
+        'Authorization': `Bearer YOUR_OPENAI_API_KEY`
+      }
+    });
 
     res.json(response.data);
   } catch (error) {
