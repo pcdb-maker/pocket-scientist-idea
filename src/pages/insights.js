@@ -217,21 +217,6 @@ const Insights = () => {
     }
   };
 
-  const handleFilterChange = (filterType, value) => {
-    setFilter({ ...filter, [filterType]: value });
-  };
-
-  const filteredProfiles = profiles.filter((profile) => {
-    const { department, role, engagementLevel } = filter;
-    let matchesDepartment = !department || profile.department === department;
-    let matchesRole = !role || profile.role === role;
-    let matchesEngagement =
-      !engagementLevel ||
-      (engagementLevel === 'High' && profile.surveyResponses.engagement > 3) ||
-      (engagementLevel === 'Low' && profile.surveyResponses.engagement <= 3);
-    return matchesDepartment && matchesRole && matchesEngagement;
-  });
-
   return (
     <Layout>
       <h1>AI-Powered Insights</h1>
