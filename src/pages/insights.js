@@ -259,6 +259,7 @@ const Insights = () => {
         <label>
           Role:
           </select>
+          </select>
         </label>
         <button onClick={applyFilters} style={{ margin: '10px', padding: '10px' }}>Apply Filters</button>
         <button onClick={clearFilters} style={{ margin: '10px', padding: '10px' }}>Clear Filters</button>
