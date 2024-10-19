@@ -240,6 +240,7 @@ form {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 .navbar a:hover {
