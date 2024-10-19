@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Adjust to set the height of the section */
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  footer {
+    margin-top: 40px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    color: #666;
+  }
+
+  /* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centers the navbar */
+  list-style-type: none; /* Removes bullet points */
+  padding: 20px; /* Adds padding around the navbar */
+  background-color: #f5f5f5; /* Background color for the navbar */
+  margin: 0;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+  
+
+
+.navbar li {
+  margin-right: 20px; /* Adds space between the links */
+}
+
+.navbar li:last-child {
+  margin-right: 0; /* Removes the extra space after the last link */
+}
+
+.navbar a {
+  text-decoration: none; /* Removes underline from links */
+  color: #333; /* Dark text color */
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #d79922; /* Change color on hover */
+}
+
+  
+  /* Profile Grid */
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between the profile cards */
+    padding: 20px;
+  }
+  
+  /* Profile Cards */
+  .profile-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+  }
+  
+  .profile-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .profile-card p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .profile-card strong {
+    color: #333;
+  }
+
+  .positive {
+    color: green;
+  }
+  
+  .negative {
+    color: red;
+  }
+  
+  .neutral {
+    color: gray;
+  }
+  
+/* General form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto; /* Centers the form */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  select,
+  textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  select {
+    max-width: 200px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: fit-content;
+    align-self: center;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  h3 {
+    color: #4CAF50;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 15px 0;
+    background-color: #f5f5f5;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    color: #4CAF50;
+  }
+  
