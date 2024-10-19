@@ -108,6 +108,16 @@ const Insights = () => {
           return (
             <div className="development-issues">
               <h2>Development Issues (Below 3):</h2>
+                  .filter(profile => profile.surveyResponses.development < 3)
+                  .map((profile, index) => (
+                    <li key={index}>{profile.name}: Development Score - {profile.surveyResponses.development}</li>
+                  ))}
+              </ul>
+            </div>
+          );
+        default:
+          return null;
+      }
     }
 
     switch (selectedTab) {
@@ -147,7 +157,7 @@ const Insights = () => {
       case 'trends':
         return (
           <div className="charts">
-            {profiles.map((profile) => (
+            {filteredProfiles.map((profile) => (
               <div key={profile.id} className="profile-chart">
                 <h3>{profile.name}'s Engagement Trend</h3>
                 <Line
