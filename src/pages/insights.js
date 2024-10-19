@@ -202,13 +202,13 @@ const Insights = () => {
         return (
           <div className="insights-summary">
             <div className="issues-overview">
-              <button onClick={() => setSelectedTab('focusAreas')} className="issue" style={{ backgroundColor: 'red', margin: '10px', padding: '10px' }}>
+              <button onClick={() => setSelectedIssue('engagement')} className="issue" style={{ backgroundColor: 'red', margin: '10px', padding: '10px' }}>
                 <h2>Engagement Issues: {insightsData.engagementIssues}</h2>
               </button>
-              <button onClick={() => setSelectedTab('reminders')} className="issue" style={{ backgroundColor: 'red', margin: '10px', padding: '10px' }}>
+              <button onClick={() => setSelectedIssue('leadership')} className="issue" style={{ backgroundColor: 'red', margin: '10px', padding: '10px' }}>
                 <h2>Leadership Issues: {insightsData.leadershipIssues}</h2>
               </button>
-              <button onClick={() => setSelectedTab('actionables')} className="issue" style={{ backgroundColor: 'red', margin: '10px', padding: '10px' }}>
+              <button onClick={() => setSelectedIssue('development')} className="issue" style={{ backgroundColor: 'red', margin: '10px', padding: '10px' }}>
                 <h2>Development Issues: {insightsData.developmentIssues}</h2>
               </button>
             </div>
