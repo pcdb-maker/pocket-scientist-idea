@@ -108,6 +108,8 @@ const Insights = () => {
           return (
             <div className="development-issues">
               <h2>Development Issues (Below 3):</h2>
+              <ul>
+                {filteredProfiles
                   .filter(profile => profile.surveyResponses.development < 3)
                   .map((profile, index) => (
                     <li key={index}>{profile.name}: Development Score - {profile.surveyResponses.development}</li>
