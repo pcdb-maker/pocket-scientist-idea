@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
   <li><a href="/profiles">Employee Profiles</a></li>
   <li><a href="/insights">AI Insights</a></li>
   <li><a href="/writing-assistant">Writing Assistant</a></li>
-  <li><a href="/feedback">Submit Feedback</a></li> {/* New link for feedback page */}
+  <li><a href="/feedback">Annual Employee Review Form</a></li> {/* New link for feedback page */}
 </ul>
 
         </nav>
