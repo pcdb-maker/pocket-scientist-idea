@@ -63,6 +63,18 @@ const Insights = () => {
     }
     const { department, role, engagementLevel } = appliedFilters;
     return profiles.filter((profile) => {
+      let matchesDepartment = !department || profile.department === department;
+      let matchesRole = !role || profile.role === role;
+      let matchesEngagement =
+        !engagementLevel ||
+        (engagementLevel === 'High' && profile.surveyResponses.engagement > 3) ||
+        (engagementLevel === 'Low' && profile.surveyResponses.engagement <= 3);
+      return matchesDepartment && matchesRole && matchesEngagement;
+    });
+  };
+
+  const filteredProfiles = getFilteredProfiles();
+
   const renderContent = () => {
     switch (selectedTab) {
       case 'focusAreas':
