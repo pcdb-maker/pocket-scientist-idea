@@ -76,6 +76,18 @@ const Insights = () => {
   const filteredProfiles = getFilteredProfiles();
 
   const renderContent = () => {
+    if (selectedIssue) {
+      switch (selectedIssue) {
+        case 'engagement':
+          return (
+            <div className="engagement-issues">
+              <h2>Engagement Issues (Below 3):</h2>
+              <ul>
+                {filteredProfiles
+                  .filter(profile => profile.surveyResponses.engagement < 3)
+                  .map((profile, index) => (
+                    <li key={index}>{profile.name}: Engagement Score - {profile.surveyResponses.engagement}</li>
+                  ))}
     switch (selectedTab) {
       case 'focusAreas':
         return (
