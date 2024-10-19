@@ -242,7 +242,7 @@ const Insights = () => {
         <button onClick={() => { setSelectedTab('actionables'); setSelectedIssue(null); setAppliedFilters(null); }}>Actionable Insights</button>
         <button onClick={() => { setSelectedTab('trends'); setSelectedIssue(null); setAppliedFilters(null); }}>Engagement Trends</button>
       </div>
-        <button onClick={() => handleFilterChange('engagementLevel', 'Low')}>Filter by Low Engagement Level</button>
+      <div className="filters">
         <label>
           Department:
           <select name="department" onChange={handleFilterChange} value={filters.department}>
@@ -263,6 +263,10 @@ const Insights = () => {
         </label>
         <label>
           Engagement Level:
+          <select name="engagementLevel" onChange={handleFilterChange} value={filters.engagementLevel}>
+            <option value="">All</option>
+            <option value="High">High</option>
+            <option value="Low">Low</option>
           </select>
         </label>
         <button onClick={applyFilters} style={{ margin: '10px', padding: '10px' }}>Apply Filters</button>
