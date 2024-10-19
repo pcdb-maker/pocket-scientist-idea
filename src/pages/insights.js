@@ -49,6 +49,20 @@ const Insights = () => {
   };
 
   const applyFilters = () => {
+    setAppliedFilters(filters);
+  };
+
+  const clearFilters = () => {
+    setFilters({ department: '', role: '', engagementLevel: '' });
+    setAppliedFilters(null);
+  };
+
+  const getFilteredProfiles = () => {
+    if (!appliedFilters) {
+      return profiles;
+    }
+    const { department, role, engagementLevel } = appliedFilters;
+    return profiles.filter((profile) => {
   const renderContent = () => {
     switch (selectedTab) {
       case 'focusAreas':
